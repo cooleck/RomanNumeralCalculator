@@ -1,0 +1,5 @@
+<exp> ::= <term> {('+' | '-') <term>}
+<term> ::= <factor> {('*' | '/') <factor>}
+<factor> ::= <number> | ['-'] '(' <exp> ')'
+<number> ::= ['-'] <digit> {<digit>}
+<digit> ::= '0' | ... | '9'
